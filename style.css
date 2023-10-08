@@ -10,9 +10,9 @@ body {
 }
 
 header {
-    background-color: #90d8c0; /* Light green */
+    background-color: transparent;
     color: #FFF;
-    padding: 4px 0;
+    padding: 0 0;
     margin: 130px 500px 0 500px;
     /*background-image: linear-gradient(to bottom, #90d8c0, transparent);*/
     background-size: cover;
@@ -72,11 +72,39 @@ header {
 
 nav ul li a {
     color: #333; /* Dark grey for navigation links */
+    background-color: #90d8c0;
 }
 
 main {
     background-color: #fff; /* White background for content */
 }
 
-/* Add additional styles for other pages as needed */
+/* Style the anchor tag within the li element */
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Dark grey for navigation links */
+    display: inline-block; /* Ensure the anchor tag takes up the full width of the li */
+    padding: 5px 5px; /* Adjust padding for spacing and button size */
+    margin: 0 -13px;
+    border-bottom: 2px solid transparent; /* Transparent border initially */
+    position: relative; /* Create a stacking context */
+}
+
+/* Apply hover effect to the bottom border of the anchor tag */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px; /* Height of the white bar at the bottom */
+    background-color: #fff; /* White bar color on hover */
+    transform: scaleX(0); /* Initially, set the scale to 0 for no visible bar */
+    transform-origin: right; /* Scale from the right side */
+}
+
+/* Apply hover effect to the anchor tag */
+nav ul li a:hover::after {
+    transform: scaleX(1); /* Scale the white bar to full width on hover */
+}
 
