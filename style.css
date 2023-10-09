@@ -43,6 +43,10 @@ main {
     background-color: #fff;
 }
 
+h1 {
+    margin-bottom: 10px;
+}
+
 .hero {
     text-align: center;
     margin-bottom: 40px;
@@ -50,7 +54,7 @@ main {
 
 .hero h1 {
     font-size: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     color: #333; /* Dark grey for heading text */
 }
 
@@ -84,7 +88,7 @@ nav ul li a {
     text-decoration: none;
     color: #333; /* Dark grey for navigation links */
     display: inline-block; /* Ensure the anchor tag takes up the full width of the li */
-    padding: 5px 5px; /* Adjust padding for spacing and button size */
+    padding: 2px 5px; /* Adjust padding for spacing and button size */
     margin: 0 -13px;
     border-bottom: 2px solid transparent; /* Transparent border initially */
     position: relative; /* Create a stacking context */
