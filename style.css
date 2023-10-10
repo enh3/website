@@ -15,7 +15,6 @@ h2.name {
     margin-top: 80px;
     background-color: #90d8c0;
     padding: 1px 2px; /* Adjust padding for spacing and button size */
-    background-position: center;
 }
 
 header {
@@ -23,7 +22,6 @@ header {
     color: #FFF;
     padding: 0 0;
     margin: 30px 500px 0 500px;
-    /*background-image: linear-gradient(to bottom, #90d8c0, transparent);*/
     background-size: cover;
     background-position: center;
     white-space: nowrap; /* Prevent text from wrapping to the next line */
@@ -31,7 +29,6 @@ header {
 
 nav ul {
     list-style: none;
-    text-align: center;
 }
 
 nav ul li {
@@ -52,7 +49,6 @@ main {
     /*margin-left: 350px;*/
     padding: 20px;
     background-color: #fff;
-    background-position: center;
 }
 
 .hero {
