@@ -128,16 +128,11 @@ nav ul li a:hover::after {
 
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 18px; /* Adjust font size for smaller screens */
-        margin: 10px;    /* Adjust margin for smaller screens */
-    }
-    /* Reset some default styles for a clean slate */
-
     h2.name {
         font-size: .8em;
-        margin-left: 0px;
-        margin-top: 0px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         background-color: #90d8c0;
         padding: 1px 2px; /* Adjust padding for spacing and button size */
     }
@@ -172,7 +167,7 @@ nav ul li a:hover::after {
     
     main {
         max-width: 1000px;
-        margin: 0px 0px auto;
+        margin: 0px 10px auto;
         /*margin-left: 350px;*/
         padding: 0px;
         background-color: #fff;
@@ -184,6 +179,7 @@ nav ul li a:hover::after {
     
     p {
         color: #333; /* Dark grey for heading text */
+	font-size: .5em;
     }
     
     .hero {
@@ -192,13 +188,13 @@ nav ul li a:hover::after {
     }
     
     .hero h1 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 10px;
         color: #333; /* Dark grey for heading text */
     }
     
     .hero p {
-        font-size: 18px;
+        font-size: 15px;
         color: #555; /* Medium grey for regular text */
     }
     
@@ -228,7 +224,7 @@ nav ul li a:hover::after {
         color: #333; /* Dark grey for navigation links */
         display: inline-block; /* Ensure the anchor tag takes up the full width of the li */
         padding: 2px 5px; /* Adjust padding for spacing and button size */
-        margin: 0 -13px;
+        margin: 0 0px;
         border-bottom: 2px solid transparent; /* Transparent border initially */
         position: relative; /* Create a stacking context */
     }
@@ -249,5 +245,9 @@ nav ul li a:hover::after {
     /* Apply hover effect to the anchor tag */
     nav ul li a:hover::after {
         transform: scaleX(1); /* Scale the white bar to full width on hover */
+    }
+
+    h1 {
+        padding: 0 0 0 0;
     }
 }
