@@ -15,6 +15,7 @@ h2.name {
     margin-top: 80px;
     background-color: #90d8c0;
     padding: 1px 2px; /* Adjust padding for spacing and button size */
+    background-position: center;
 }
 
 header {
@@ -51,14 +52,7 @@ main {
     /*margin-left: 350px;*/
     padding: 20px;
     background-color: #fff;
-}
-
-h1 {
-    margin-bottom: 10px;
-}
-
-p {
-    color: #333; /* Dark grey for heading text */
+    background-position: center;
 }
 
 .hero {
@@ -84,17 +78,9 @@ footer {
     padding: 10px 0;
 }
 
-/* New color palette */
-header {
-}
-
 nav ul li a {
     color: #333; /* Dark grey for navigation links */
     background-color: #90d8c0;
-}
-
-main {
-    background-color: #fff; /* White background for content */
 }
 
 /* Style the anchor tag within the li element */
@@ -126,6 +112,15 @@ nav ul li a:hover::after {
     transform: scaleX(1); /* Scale the white bar to full width on hover */
 }
 
+h1 {
+    margin-bottom: 10px;
+    margin-left: -1px;
+}
+
+p {
+    color: #333; /* Dark grey for heading text */
+}
+
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
     h2.name {
@@ -133,53 +128,32 @@ nav ul li a:hover::after {
         margin-left: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: #90d8c0;
         padding: 1px 2px; /* Adjust padding for spacing and button size */
     }
     
     header {
-        background-color: transparent;
-        color: #FFF;
-        padding: 0 0;
-        margin: 0px 0px 0 0px;
-        /*background-image: linear-gradient(to bottom, #90d8c0, transparent);*/
-        background-size: cover;
-        background-position: center;
-        white-space: nowrap; /* Prevent text from wrapping to the next line */
-    }
-    
-    nav ul {
-        list-style: none;
-        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
     }
     
     nav ul li {
-        display: inline;
-        margin: 0 0px;
+        margin: 0 0;
     }
     
     nav ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
         font-size: .8em;
     }
     
     main {
-        max-width: 1000px;
         margin: 0px 10px auto;
-        /*margin-left: 350px;*/
         padding: 0px;
         background-color: #fff;
     }
     
-    h1 {
-        margin-bottom: 10px;
-    }
-    
     p {
         color: #333; /* Dark grey for heading text */
-	font-size: .5em;
+	font-size: .6em;
     }
     
     .hero {
@@ -205,17 +179,9 @@ nav ul li a:hover::after {
         padding: 10px 0;
     }
     
-    /* New color palette */
-    header {
-    }
-    
     nav ul li a {
         color: #333; /* Dark grey for navigation links */
         background-color: #90d8c0;
-    }
-    
-    main {
-        background-color: #fff; /* White background for content */
     }
     
     /* Style the anchor tag within the li element */
@@ -245,9 +211,5 @@ nav ul li a:hover::after {
     /* Apply hover effect to the anchor tag */
     nav ul li a:hover::after {
         transform: scaleX(1); /* Scale the white bar to full width on hover */
-    }
-
-    h1 {
-        padding: 0 0 0 0;
     }
 }
