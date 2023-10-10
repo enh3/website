@@ -9,14 +9,23 @@ body {
     background-color: #fff;
 }
 
+h2.name {
+    font-size: .8em;
+    margin-left: 400px;
+    margin-top: 80px;
+    background-color: #90d8c0;
+    padding: 1px 2px; /* Adjust padding for spacing and button size */
+}
+
 header {
     background-color: transparent;
     color: #FFF;
     padding: 0 0;
-    margin: 130px 500px 0 500px;
+    margin: 30px 500px 0 500px;
     /*background-image: linear-gradient(to bottom, #90d8c0, transparent);*/
     background-size: cover;
     background-position: center;
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
 }
 
 nav ul {
@@ -37,9 +46,9 @@ nav ul li a {
 }
 
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    margin-left: 350px;
+    max-width: 1000px;
+    margin: 20px 365px auto;
+    /*margin-left: 350px;*/
     padding: 20px;
     background-color: #fff;
 }
