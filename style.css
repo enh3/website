@@ -7,6 +7,13 @@ body, h1, h2, h3, p, ul {
 body {
     font-family: "Monospace", sans-serif;
     background-color: #fff;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    position: relative;
 }
 
 h2.name {
@@ -139,7 +146,7 @@ p {
     
     header {
         padding: 0;
-        margin-left: 10;
+        margin-left: 10px;
         margin-bottom: 20px;
     }
     
