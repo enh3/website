@@ -26,6 +26,9 @@ h2.name {
     background-color: #90d8c0;
     padding: 1px 2px; /* Adjust padding for spacing and button size */
     width: 100%;
+    background-image: url('noise5.png');
+    background-repeat: repeat; /* You can use 'repeat-x' or 'repeat-y' for different directions */
+    background-size: auto; /* Adjust as needed */
 }
 
 header {
@@ -98,6 +101,9 @@ footer {
 nav ul li a {
     color: #333; /* Dark grey for navigation links */
     background-color: #90d8c0;
+    background-image: url('noise5.png');
+    background-repeat: repeat; /* You can use 'repeat-x' or 'repeat-y' for different directions */
+    background-size: auto; /* Adjust as needed */
 }
 
 /* Style the anchor tag within the li element */
@@ -136,6 +142,12 @@ h1 {
 
 p {
     color: #333; /* Dark grey for heading text */
+}
+
+li {
+    background-image: url('bckg.jpg');
+    background-repeat: repeat; /* You can use 'repeat-x' or 'repeat-y' for different directions */
+    background-size: auto; /* Adjust as needed */
 }
 
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
