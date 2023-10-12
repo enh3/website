@@ -169,7 +169,7 @@ p {
     main {
         margin: 0px 10px auto;
         padding: 0px;
-        background-color: #000;
+        background-color: #fff;
     }
     
     p {
@@ -181,6 +181,7 @@ p {
         margin-bottom: 40px;
         margin-left: 0px;
         margin-right: 10px;
+	background-color: #000;
     }
     
     .hero h1 {
