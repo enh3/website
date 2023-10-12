@@ -155,7 +155,7 @@ p {
     header {
         padding: 0;
         margin-left: 10px;
-        margin-bottom: 80px;
+        margin-bottom: 65px;
         margin-top: 20px;
     }
     
@@ -175,7 +175,7 @@ p {
     
     p {
         color: #333; /* Dark grey for heading text */
-	font-size: .6em;
+	font-size: .75em;
     }
     
     .hero {
