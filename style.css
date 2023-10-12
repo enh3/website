@@ -141,7 +141,7 @@ p {
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
     .cnt {
-        position: absolute;
+        position: relative; 
         left: 0%;
     }
     h2.name {
@@ -179,7 +179,8 @@ p {
     
     .hero {
         margin-bottom: 40px;
-        margin-left: 10px;
+        margin-left: 0px;
+        margin-right: 10px;
     }
     
     .hero h1 {
