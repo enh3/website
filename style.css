@@ -142,6 +142,9 @@ h1 {
 
 p {
     color: #333; /* Dark grey for heading text */
+    margin-right: 30%;
+    text-align: justify; 
+    text-justify: auto;
 }
 
 li {
@@ -151,7 +154,7 @@ li {
 }
 
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
-@media (max-width: 768px) {
+@media (max-width: 414px) {
     .cnt {
         position: relative; 
         left: 0%;
@@ -189,6 +192,7 @@ li {
     p {
         color: #333; /* Dark grey for heading text */
 	font-size: .75em;
+        margin-right: 0%;
     }
     
     .hero {
