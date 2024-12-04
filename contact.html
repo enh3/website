@@ -26,6 +26,30 @@
     <main>
         <section>
             <h1>Contact</h1>
+	    <span class="contact-info">
+		  <span id="email">*protected email*</span><br>
+		  <span id="phone">*protected phone*</span>
+		  <script type="text/javascript">
+		    (function() {
+		      var ml = "@27nt()a.89e460 lk-jc"; // Scrambled character map
+		      var emailEncoded = "3;40AC;@8D7"; // Encoded email
+		      var phoneEncoded = "52296?=2<B>1:="; // Encoded phone
+		      var decode = function(encoded) {
+			var o = ""; // Decoded string will be built here
+			for (var j = 0, l = encoded.length; j < l; j++) {
+			  o += ml.charAt(encoded.charCodeAt(j) - 48); // Decode each character
+			}
+			return o;
+		      };
+		      document.getElementById("email").innerHTML = decode(emailEncoded); // Insert decoded email
+		      document.getElementById("phone").innerHTML = decode(phoneEncoded); // Insert decoded phone
+		    }());
+		  </script>
+		  <noscript>
+		    *protected contact information*
+		  </noscript>
+		</span>
+
             <p>
 	        <br>
 		
