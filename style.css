@@ -6,36 +6,64 @@ body, h1, h2, h3, p, ul {
 
 body {
     font-family: "Monospace", sans-serif;
-    background-color: #fff;
+    background-color: rgb(252, 252, 252);
     width: 100%;
     position: relative;
+    
+    /* Do not repeat the image */
+    background-repeat: no-repeat; 
+    
+    background-size: cover;
+    
+    /* Keep the image fixed when scrolling */
+    background-attachment: fixed; 
+    
+    /* Center the image */
+    background-position: center;
 }
 
 .cnt {
-    position: absolute;
-    left: 30%;
-    right: 0;
-    top: 0;
+    position: relative;
+    width: 100%; /* Takes up full width of the wrapper */
+    padding-left: 200px; /* Use padding to nudge text away from the frame edge */
+}
+
+.wrapper {
+    /* Create a central anchor */
+    width: 1000px;
+    margin: 0 auto; /* This centers the whole thing */
+    position: relative;
+    min-height: 100vh;
+    
+    /* Background moves with the container */
+    background-image: url('images/brutalist-frame6.png');
+    background-repeat: no-repeat;
+    background-size: 900px auto; 
+    background-position: 185% 22%;
+    overflow: hidden;
 }
 
 h2.name {
-    font-size: .8em;
-    margin-left: 35px;
+    color: #333;
+    /* 0.5 is 50% opacity */
+    background-color: rgba(144, 216, 192, 0); 
+    font-size: 1.8em;
+    margin-left: 15px;
     margin-right: 0px;
     margin-top: 80px;
-    background-color: #90d8c0;
     padding: 1px 2px; /* Adjust padding for spacing and button size */
     width: 55%;
-    background-image: url('noise5.png');
     background-repeat: repeat; /* You can use 'repeat-x' or 'repeat-y' for different directions */
     background-size: auto; /* Adjust as needed */
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 300;
 }
 
 header {
     background-color: transparent;
     color: #FFF;
     padding: 0 0;
-    margin: 30px 900px 0 135px;
+    margin: 30px 900px 0 125px;
     background-size: cover;
     background-position: center;
     white-space: nowrap; /* Prevent text from wrapping to the next line */
@@ -59,10 +87,22 @@ nav ul li a {
 
 main {
     max-width: 1000px;
+    min-width: 400px;
     margin: 20px 0px auto;
-    margin-right: 45%;
+    margin-right: 70%;
     padding: 20px;
     background-color: #fff;
+    background-image: url('images/hankin7.png'); 
+    
+    background-repeat: repeat; 
+    
+    background-size: 600px 600px;
+    
+    /* Keep the image fixed when scrolling */
+    background-attachment: scroll; 
+    
+    /* Center the image */
+    background-position: center; 
 }
 
 .herodiv {
@@ -72,10 +112,9 @@ main {
 
 .hero {
     margin-bottom: 40px;
-    margin-left: 40px;
-    position: absolute;
+    position: relative;
     min-width: 400px;
-    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    white-space: wrap; /* Prevent text from wrapping to the next line */
 }
 
 .hero h1 {
@@ -89,7 +128,6 @@ main {
     color: #555; /* Medium grey for regular text */
     text-align: center;
 }
-}
 
 footer {
     text-align: center;
@@ -99,11 +137,12 @@ footer {
 }
 
 nav ul li a {
-    color: #333; /* Dark grey for navigation links */
-    background-color: #90d8c0;
+    color: #333;
+    /* 0.5 is 50% opacity */
+    background-color: rgba(144, 216, 192, 0.05); 
     background-image: url('noise5.png');
-    background-repeat: repeat; /* You can use 'repeat-x' or 'repeat-y' for different directions */
-    background-size: auto; /* Adjust as needed */
+    background-repeat: repeat;
+    background-size: auto;
 }
 
 /* Style the anchor tag within the li element */
@@ -147,7 +186,6 @@ p {
     text-justify: auto;
     margin-bottom: 20px;
 }
-}
 
 li {
     background-image: url('bckg.jpg');
@@ -156,18 +194,19 @@ li {
 }
 
 .lang-switcher {
-position: fixed; /* Keeps it in the corner even when scrolling */
-top: 20px;
-right: 20px;
-font-family: sans-serif;
-font-size: 14px;
-z-index: 1000;   /* Ensures it stays on top of other content */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+    z-index: 1000;
 }
 
 .lang-switcher a {
     text-decoration: none;
     color: #000;
-    padding: 0 5px;
+    /* Reduced the horizontal padding from 5px to 2px */
+    padding: 0 5px; 
 }
 
 .lang-switcher a:hover {
@@ -175,7 +214,10 @@ z-index: 1000;   /* Ensures it stays on top of other content */
 }
 
 .lang-switcher span {
-    color: #ccc;
+    /* Set to black to match your text */
+    color: #555; 
+    /* Optionally add negative margin to pull them even closer */
+    margin: 0 -2px; 
 }
 
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
