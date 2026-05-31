@@ -86,10 +86,9 @@ nav ul li a {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 420px;
     min-width: 400px;
     margin: 20px 0px auto;
-    margin-right: 70%;
     padding: 20px;
     background-color: #fff;
     background-image: url('images/hankin7.png'); 
@@ -103,6 +102,31 @@ main {
     
     /* Center the image */
     background-position: center; 
+    flex: 2; /* Gives the main content more space */
+}
+
+.content-row {
+    display: flex;
+    flex-direction: row; /* Aligns them side-by-side */
+    gap: 20px;           /* Adds space between main and the image */
+    align-items: flex-start; /* Keeps them aligned to the top */
+    width: 100%;
+}
+
+.sidebar-image {
+    flex: 1; /* Gives the image a smaller portion of the width */
+    max-width: 500px;
+    border: 0px solid #131;
+    margin-top: 40px;
+}
+
+.sidebar-image img {
+    width: 100%; /* Ensures image scales with the sidebar width */
+    height: auto;
+}
+
+main iframe + iframe {
+    margin-top: 20px;
 }
 
 .herodiv {
