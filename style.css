@@ -86,7 +86,7 @@ nav ul li a {
 }
 
 main {
-    max-width: 420px;
+    max-width: 410px;
     min-width: 400px;
     margin: 20px 0px auto;
     padding: 20px;
@@ -123,6 +123,18 @@ main {
 .sidebar-image img {
     width: 100%; /* Ensures image scales with the sidebar width */
     height: auto;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column; /* Stacks image and text */
+}
+
+.caption {
+    font-size: 0.75em;     /* Smaller, subtle text */
+    color: #444;           /* Greyed out to be less distracting */
+    margin-top: 8px;       /* Small space between image and credit */
+    text-align: center;    /* Center the credit under the photo */
 }
 
 main iframe + iframe {
