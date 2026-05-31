@@ -31,29 +31,28 @@
     <main>
         <section>
             <h1>Contact</h1>
-	    <span class="contact-info">
-		  <span id="email">*protected email*</span><br>
-		  <span id="phone">*protected phone*</span>
-		  <script type="text/javascript">
-		    (function() {
-		      var ml = "@27nt()a.89e460 lk-jc"; // Scrambled character map
-		      var emailEncoded = "3;40AC;@8D7"; // Encoded email
-		      var phoneEncoded = "52296?=2<B>1:="; // Encoded phone
-		      var decode = function(encoded) {
-			var o = ""; // Decoded string will be built here
-			for (var j = 0, l = encoded.length; j < l; j++) {
-			  o += ml.charAt(encoded.charCodeAt(j) - 48); // Decode each character
-			}
-			return o;
-		      };
-		      document.getElementById("email").innerHTML = decode(emailEncoded); // Insert decoded email
-		      document.getElementById("phone").innerHTML = decode(phoneEncoded); // Insert decoded phone
-		    }());
-		  </script>
-		  <noscript>
-		    *protected contact information*
-		  </noscript>
-		</span>
+		<p>
+		For any enquires about piano lessons, organ for weddings and funerals, concerts, workshops / seminars, or simply to say hello, don't hesitate to reach out.
+		</p>
+	    <form action="https://api.staticforms.dev/submit" method="POST">
+	      <input type="hidden" name="apiKey" value="sf_b4690552159e65ee2095b779" />
+	      <input type="hidden" name="subject" value="Kjel submission" />
+	      <input type="hidden" name="redirectTo" value="https://kjel.ca/sent.html">
+	    
+		    <label>Name
+	      	      <input type="text" name="name" required />
+	      	    </label>
+
+		    <label>Email
+	      	      <input type="email" name="email" required />
+	      	    </label>
+
+	      <label>Message
+	        <textarea name="message" required></textarea>
+	      </label>
+	    
+	      <button type="submit">Send</button>
+	    </form>
         </section>
     </main>
     </div>
