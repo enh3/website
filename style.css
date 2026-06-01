@@ -139,7 +139,6 @@ main {
 .content-row {
     display: flex;
     flex-direction: row; /* Aligns them side-by-side */
-    max-width: 1550px;
     margin: 0 auto;
     gap: 20px;           /* Adds space between main and the image */
     align-items: flex-start; /* Keeps them aligned to the top */
