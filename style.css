@@ -188,6 +188,7 @@ main iframe + iframe {
     font-size: 20px;
     color: #333; /* Dark grey for heading text */
     text-align: center;
+    font-weight: 550;
 }
 
 .hero p {
@@ -208,7 +209,6 @@ form {
     display: flex;
     flex-direction: column;
     gap: 5px; /* Adds space between the label groups */
-    max-width: 400px;
 }
 
 /* 2. Make the labels behave like distinct blocks */
@@ -254,6 +254,7 @@ label {
 h1 {
     margin-bottom: 20px;
     margin-left: -1px;
+    font-weight: 550;
 }
 
 p {
@@ -334,7 +335,7 @@ li {
         width: 95% !important;
         margin: 0 auto;
         flex: 0 0 auto !important; /* Let it grow naturally */
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     iframe {
@@ -362,7 +363,7 @@ li {
 
     p {
         font-size: 0.9em;
-        margin: 0 10px 15px 10px;
+        margin: 0 0px 15px 0px;
     }
 
     h2.name {
