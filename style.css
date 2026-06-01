@@ -188,7 +188,6 @@ main iframe + iframe {
     font-size: 20px;
     color: #333; /* Dark grey for heading text */
     text-align: center;
-    font-weight: 550;
 }
 
 .hero p {
@@ -250,11 +249,10 @@ label {
   color: #444;
 }
 
-
 h1 {
     margin-bottom: 20px;
     margin-left: -1px;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 p {
@@ -337,7 +335,7 @@ li {
         flex: 0 0 auto !important; /* Let it grow naturally */
         margin-top: 0px;
     }
-
+    
     iframe {
         width: 100% !important;     /* Force the width to fill the container */
         max-width: 100% !important; /* Prevent it from being wider than the screen */
