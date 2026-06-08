@@ -1,8 +1,11 @@
+:root {
+    --main-width: 420px; 
+}
+
 body {
     overflow-x: hidden;
 }
 
-/* Reset some default styles for a clean slate */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -13,52 +16,46 @@ body {
     background-color: rgb(252, 252, 252);
     width: 100%;
     position: relative;
-    
-    /* Do not repeat the image */
     background-repeat: no-repeat; 
-    
     background-size: cover;
-    
-    /* Keep the image fixed when scrolling */
     background-attachment: fixed; 
-    
-    /* Center the image */
     background-position: center;
 }
 
 .cnt {
-    position: relative;
-    width: 100%; /* Takes up full width of the wrapper */
-    padding-left: 200px; /* Use padding to nudge text away from the frame edge */
+    /*position: relative;
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    transform: translateX(-1.5vw);
+    margin-left: 13.90vw;*/
+    width: 70%; 
+    margin: 0 auto;
+    transform: translateX(-1.11vw);
 }
 
 .wrapper {
-    /* Create a central anchor */
     width: 1000px;
-    margin: 0 auto; /* This centers the whole thing */
+    margin: 0 auto;
     position: relative;
     min-height: 100vh;
-    
-    /* Background moves with the container */
     background-image: url('images/brutalist-frame6.png');
     background-repeat: no-repeat;
-    background-size: 900px auto; 
+    background-size: 900px auto;
     background-position: 185% 22%;
     overflow: hidden;
 }
 
 h2.name {
     color: #333;
-    /* 0.5 is 50% opacity */
     background-color: rgba(144, 216, 192, 0); 
     font-size: 1.8em;
     margin-left: 15px;
     margin-right: 0px;
-    margin-top: 80px;
-    padding: 1px 2px; /* Adjust padding for spacing and button size */
+    margin-top: 10.6vh;
+    padding: 1px 2px; 
     width: 55%;
     background-repeat: repeat; /* You can use 'repeat-x' or 'repeat-y' for different directions */
-    background-size: auto; /* Adjust as needed */
+    background-size: auto; 
     font-family: 'Helvetica', sans-serif;
     font-weight: 300;
 }
@@ -70,7 +67,7 @@ header {
     margin: 30px 900px 0 125px;
     background-size: cover;
     background-position: center;
-    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    white-space: nowrap; 
 }
 
 nav ul {
@@ -92,11 +89,11 @@ nav ul li a {
     background-size: auto;
     text-decoration: none;
     color: #333;
-    display: inline-block; /* Ensure the anchor tag takes up the full width of the li */
+    display: inline-block;		  /* Ensure the anchor tag takes up the full width of the li */
     padding: 2px 5px;
     margin: 0 -13px;
     border-bottom: 2px solid transparent; /* Transparent border initially */
-    position: relative; /* Create a stacking context */
+    position: relative; 		  /* Create a stacking context */
 }
 
 /* Apply hover effect to the bottom border of the anchor tag */
@@ -106,9 +103,9 @@ nav ul li a::after {
     left: 0;
     bottom: -2px;
     width: 100%;
-    height: 2px; /* Height of the white bar at the bottom */
-    background-color: #fff; /* White bar color on hover */
-    transform: scaleX(0); /* Initially, set the scale to 0 for no visible bar */
+    height: 2px;      	     /* Height of the white bar at the bottom */
+    background-color: #fff;  /* White bar color on hover */
+    transform: scaleX(0);    /* Initially, set the scale to 0 for no visible bar */
     transform-origin: right; /* Scale from the right side */
 }
 
@@ -118,29 +115,28 @@ nav ul li a:hover::after {
 }
 
 main {
-    width: 420px;
+    width: var(--main-width);
     flex-shrink: 0;
     margin: 20px 0;
     padding: 20px;
     background-color: #fff;
     background-image: url('images/hankin7.png'); 
-    
     background-repeat: repeat; 
-    
     background-size: 600px 600px;
-    
-    /* Keep the image fixed when scrolling */
-    background-attachment: scroll; 
-    
-    /* Center the image */
-    background-position: center; 
+    background-attachment: scroll; /* Keep the image fixed when scrolling */ 
+    background-position: center;
+}
+
+.page-bio {
+    --main-width: 475px; /* Bio gets extra wide */
+    padding-bottom: 5px;
 }
 
 .content-row {
     display: flex;
-    flex-direction: row; /* Aligns them side-by-side */
+    flex-direction: row;     /* Aligns them side-by-side */
     margin: 0 auto;
-    gap: 20px;           /* Adds space between main and the image */
+    gap: 20px;               /* Adds space between main and the image */
     align-items: flex-start; /* Keeps them aligned to the top */
 }
 
@@ -161,10 +157,10 @@ main {
 }
 
 .caption {
-    font-size: 0.75em;     /* Smaller, subtle text */
-    color: #444;           /* Greyed out to be less distracting */
-    margin-top: 8px;       /* Small space between image and credit */
-    text-align: center;    /* Center the credit under the photo */
+    font-size: 0.75em;     
+    color: #444;          
+    margin-top: 8px; /* Small space between image and credit */
+    text-align: center;  
 }
 
 main iframe + iframe {
@@ -180,18 +176,18 @@ main iframe + iframe {
     margin-bottom: 40px;
     position: relative;
     min-width: 400px;
-    white-space: wrap; /* Prevent text from wrapping to the next line */
+    white-space: wrap; 
 }
 
 .hero h1 {
     font-size: 20px;
-    color: #333; /* Dark grey for heading text */
+    color: #333; 
     text-align: center;
 }
 
 .hero p {
     font-size: 18px;
-    color: #555; /* Medium grey for regular text */
+    color: #555;
     text-align: center;
 }
 
@@ -202,42 +198,42 @@ footer {
     padding: 10px 0;
 }
 
-/* 1. Reset fonts and box-sizing so padding doesn't break your layout */
+/* Reset fonts and box-sizing so padding doesn't break your layout */
 form {
     display: flex;
     flex-direction: column;
     gap: 5px; /* Adds space between the label groups */
 }
 
-/* 2. Make the labels behave like distinct blocks */
+/* Make the labels behave like distinct blocks */
 label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-/* 3. Style the inputs and textarea consistently */
+/* Style the inputs and textarea consistently */
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #333; /* Matches your site aesthetic */
+    border: 1px solid #333; 
     border-radius: 4px;
     font-family: inherit;
     box-sizing: border-box; /* Ensures padding is included in width */
 }
 
-/* 4. Make the textarea taller */
+/* Make the textarea taller */
 textarea {
     height: 150px;
     resize: vertical; /* Allows user to resize height if they want */
 }
 
-/* 5. Add a "focus" effect so users know which field is active */
+/* Add a "focus" effect so users know which field is active */
 input:focus, 
 textarea:focus {
-    outline: 2px solid #90d8c0; /* Uses your brand color */
+    outline: 1px solid #3088a0; /* Uses your brand color */
     border-color: transparent;
 }
 
@@ -255,17 +251,17 @@ h1 {
 }
 
 p {
-    color: #333; /* Dark grey for heading text */
-    /*margin-right: 30%;*/
+    color: #333; 
     text-align: justify; 
     text-justify: auto;
     margin-bottom: 20px;
+    font-size: 1rem;
 }
 
 li {
     background-image: url('bckg.jpg');
     background-repeat: repeat; /* You can use 'repeat-x' or 'repeat-y' for different directions */
-    background-size: auto; /* Adjust as needed */
+    background-size: auto;
 }
 
 .lang-switcher {
@@ -280,7 +276,6 @@ li {
 .lang-switcher a {
     text-decoration: none;
     color: #000;
-    /* Reduced the horizontal padding from 5px to 2px */
     padding: 0 5px; 
 }
 
@@ -289,9 +284,7 @@ li {
 }
 
 .lang-switcher span {
-    /* Set to black to match your text */
     color: #555; 
-    /* Optionally add negative margin to pull them even closer */
     margin: 0 -2px; 
 }
 
@@ -343,7 +336,7 @@ li {
 
     nav ul {
         display: flex;           /* Enables Flexbox */
-        justify-content: center; /* The magic: centers items horizontally */
+        justify-content: center; /* Centers items horizontally */
         flex-wrap: wrap;         /* Allows items to move to a new row if the screen is narrow */
         padding: 0;
         margin: 0 auto 30px auto;
@@ -351,7 +344,7 @@ li {
 
     nav ul li {
         display: block;          /* Flex children don't need 'inline' */
-        margin: 0px 2px;        /* Spacing between items */
+        margin: 0px 2px;         /* Spacing between items */
     }
 
     nav ul li a {
@@ -366,5 +359,60 @@ li {
     h2.name {
         font-size: 1em;
         margin: 10px;
+    }
+}
+
+@media (min-width: 1500px) {
+    header {
+    }
+
+    main {
+    }
+
+    :root {
+        --main-width: 620px; /* Default for laptop */
+    }
+
+    .page-bio {
+	--main-width: 665px; 
+    }
+
+    .hero {
+    }
+
+    .lang-switcher {
+    }
+
+    .sidebar-image {
+        flex: 1 1 500px; /* Gives the image a smaller portion of the width */
+    }
+
+    .sidebar-image {
+	margin-top: 50px;
+    }
+
+    .sidebar-image img {
+    }
+
+    nav ul {
+    }
+
+    nav ul li {
+    }
+
+    nav ul li a {
+	font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    h2.name {
+	font-size: 2.8em;
+    }
+
+    .caption {
+        font-size: 1em;
     }
 }
