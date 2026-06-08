@@ -289,7 +289,7 @@ li {
 }
 
 /* Media query for screens up to 768px */
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 480px) and (orientation: landscape) {
     header {
 	width: 100%;
 	margin: 0 auto;
