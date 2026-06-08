@@ -23,14 +23,14 @@ body {
 }
 
 .cnt {
-    /*position: relative;
-    width: min(90%, 1200px);
+    position: relative;
+    width: min(90%, 1035px);
     margin: 0 auto;
-    transform: translateX(-1.5vw);
-    margin-left: 13.90vw;*/
-    width: 70%; 
+    transform: translateX(-0.2vw);
+    /*margin-left: 13.90vw;*/
+    /*width: 70%; 
     margin: 0 auto;
-    transform: translateX(-1.11vw);
+    transform: translateX(-1.11vw);*/
 }
 
 .wrapper {
@@ -51,7 +51,7 @@ h2.name {
     font-size: 1.8em;
     margin-left: 15px;
     margin-right: 0px;
-    margin-top: 10.6vh;
+    margin-top: 80px;
     padding: 1px 2px; 
     width: 55%;
     background-repeat: repeat; /* You can use 'repeat-x' or 'repeat-y' for different directions */
@@ -362,57 +362,3 @@ li {
     }
 }
 
-@media (min-width: 1500px) {
-    header {
-    }
-
-    main {
-    }
-
-    :root {
-        --main-width: 620px; /* Default for laptop */
-    }
-
-    .page-bio {
-	--main-width: 665px; 
-    }
-
-    .hero {
-    }
-
-    .lang-switcher {
-    }
-
-    .sidebar-image {
-        flex: 1 1 500px; /* Gives the image a smaller portion of the width */
-    }
-
-    .sidebar-image {
-	margin-top: 50px;
-    }
-
-    .sidebar-image img {
-    }
-
-    nav ul {
-    }
-
-    nav ul li {
-    }
-
-    nav ul li a {
-	font-size: 1.2em;
-    }
-
-    p {
-        font-size: 1.4em;
-    }
-
-    h2.name {
-	font-size: 2.8em;
-    }
-
-    .caption {
-        font-size: 1em;
-    }
-}
