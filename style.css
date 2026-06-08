@@ -233,7 +233,7 @@ textarea {
 /* Add a "focus" effect so users know which field is active */
 input:focus, 
 textarea:focus {
-    outline: 1px solid #3088a0; /* Uses your brand color */
+    outline: 1px solid #306680; /* Uses your brand color */
     border-color: transparent;
 }
 
